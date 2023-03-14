@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1p | awk {printf %s,, /bin/bash} | sed s/,$/n/
+ls -a | grep ^[[:alnum:]] | sed s/$/,/ | sort -d | sed 1s/^/.n..n/ | tr -d n && echo
