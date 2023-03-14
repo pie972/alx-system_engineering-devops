@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Fa | awk {print /bin/bash/} | LC_ALL=C sort -df --key=1.1,1.1 -t/ | tr n , && echo
+ls -1a | sed -e 1i./ -e 2i../ -e s/$/// | LC_ALL=C sort -df | tr n ,
