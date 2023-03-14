@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -p | tr n , | sed s/,$/n/
+ls -la | sort -n -k1.1 | sed -e 1s/^/.,..n/ -e s/$/,/ | tr -d n && echo
