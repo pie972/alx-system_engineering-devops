@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | sed -e 1i./ -e 2i../ -e s/$/// | LC_ALL=C sort -df | tr n ,
+ls -amvp
