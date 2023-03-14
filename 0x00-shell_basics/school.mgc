@@ -1,2 +1,2 @@
 #!/bin/bash
-file -m ./school.mgc /path/to/my/school/file
+0 string SCHOOL
