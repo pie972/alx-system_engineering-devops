@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -a1p | awk {printf %s,, /bin/bash} | sed s/,$/n/
