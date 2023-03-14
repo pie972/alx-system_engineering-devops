@@ -1,2 +1,1 @@
 #!/bin/bash
-find "$(pwd)" -maxdepth 1 -printf "%f," | sed s/,$/n/
