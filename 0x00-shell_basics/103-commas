@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la | sort -n -k1.1 | sed -e 1s/^/.,..n/ -e s/$/,/ | tr -d n && echo
+find "$(pwd)" -maxdepth 1 -printf "%f," | sed s/,$/n/
