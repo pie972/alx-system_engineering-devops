@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -al | cat /dev/stdin /../ /boot/ -
+ls -al . .. /boot
