@@ -96,8 +96,13 @@
 --------------------------------------------------------------------------
 ## 0. Where am I?
 Write a script that prints the absolute path name of the current working directory.
+```bash
+```
 
 ## 1. What’s in there?
+```bash
+```
+
 ## 2. There is no place like home
 ## 3. The long format
 ## 4. Hidden files
@@ -116,7 +121,28 @@ Write a script that prints the absolute path name of the current working directo
 ## 17. Tree
 ## 18. Life is a series of commas, not periods
 ## 19. File type: School
-
+```bash
+ubuntu@ip-172-31-63-244:/tmp/magic$ cp /bin/ls .
+ubuntu@ip-172-31-63-244:/tmp/magic$ ls -la
+total 268
+drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 02:44 .
+drwxrwxrwt 11 root   root   139264 Sep 20 02:44 ..
+-rw-r--r--  1 ubuntu ubuntu    496 Sep 20 02:42 school.mgc
+-rwxr-xr-x  1 ubuntu ubuntu 110080 Sep 20 02:43 ls
+-rw-rw-r--  1 ubuntu ubuntu     50 Sep 20 02:06 thisisaschoolfile
+-rw-rw-r--  1 ubuntu ubuntu     30 Sep 20 02:16 thisisatextfile
+ubuntu@ip-172-31-63-244:/tmp/magic$ file --mime-type -m school.mgc *
+school.mgc:         application/octet-stream
+ls:                    application/octet-stream
+thisisaschoolfile: School
+thisisatextfile:       text/plain
+ubuntu@ip-172-31-63-244:/tmp/magic$ file -m school.mgc *
+school.mgc:         data
+ls:                    data
+thisisaschoolfile: School data
+thisisatextfile:       ASCII text
+ubuntu@ip-172-31-63-244:/tmp/magic$
+```
 
 
 
