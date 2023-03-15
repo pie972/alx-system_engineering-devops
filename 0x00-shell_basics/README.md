@@ -14,17 +14,17 @@
 [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29) <br />
 
 ## man or help:
-cd
-ls
-pwd
-less
-file
-ln
-cp
-mv
-rm
-mkdir
-type
-which
-help
-man
+* cd <br />
+* ls
+* pwd
+* less
+* file
+* ln
+* cp
+* mv
+* rm
+* mkdir
+* type
+* which
+* help
+* man
