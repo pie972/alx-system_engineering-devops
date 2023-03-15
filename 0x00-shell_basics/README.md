@@ -39,12 +39,14 @@
 ## General
 * What does RTFM mean?
 * What is a Shebang
+<br />
 
 ## What is the Shell
 * What is the shell
 * What is the difference between a terminal and a shell
 * What is the shell prompt
 * How to use the history (the basics)
+<br />
 
 ## Navigation
 * What do the commands or built-ins 'cd', 'pwd', 'ls' do 
@@ -56,6 +58,7 @@
 * What is the difference between the root directory and the home directory of the user root
 * What are the characteristics of hidden files and how to list them
 * What does the command 'cd' - do
+<br />
 
 ## Looking Around
 * What do the commands 'ls', 'less', 'file' do
@@ -67,29 +70,78 @@
 * What is a symbolic link
 * What is a hard link
 * What is the difference between a hard link and a symbolic link
+<br />
 
 ## Manipulating Files
 * What do the commands 'cp', 'mv', 'rm', 'mkdir' do
 * What are wildcards and how do they work
 * How to use wildcards
+<br />
 
 ## Working with Commands
 * What do 'type', 'which', 'help', 'man' commands do
 * What are the different kinds of commands
 * What is an alias
 * When do you use the command help instead of man
+<br />
 
 ## Reading Man Pages 
 * How to read a man page
 * What are man page sections
 * What are the section numbers for User commands, System calls and Library functions
+<br />
 
 ## Keyboard Shortcuts for Bash
 * Common shortcuts for Bash
+<br />
 
 ## LTS
 * What does 'LTS' mean?
+<br />
 
+# Requirements
+--------------------------------------------------------------------------
+## General
+* Allowed editors: vi, vim, emacs
+* All your scripts will be tested on Ubuntu 20.04 LTS
+* All your scripts should be exactly two lines long ($ wc -l file should print 2)
+* All your files should end with a new line ([why?](https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file/18789))
+* The first line of all your files should be exactly #!/bin/bash
+* You are not allowed to use backticks, &&, || or ;
+* All your scripts must be executable. To make your file executable, use the chmod command: chmod u+x file.
+<br />
+
+## More Info
+Example of line count and first line
+```bash
+pie@ubuntu:/tmp$ wc -l 12-file_type 
+2 12-file_type
+pie@ubuntu:/tmp$ head -n 1 12-file_type 
+#!/bin/bash
+pie@ubuntu:/tmp$ 
+```
+In order to test your scripts, you will need to use this command: chmod u+x file. 
+Example
+```bash
+pie@ubuntu:/tmp$ ls
+12-file_type
+lll
+pie@ubuntu:/tmp$ ls -la lll
+-rw-rw-r-- 1 pie pie 15 Mar 23 21:05 lll
+pie@ubuntu:/tmp$ cat lll
+#!/bin/bash
+ls
+pie@ubuntu:/tmp$ ls -l lll
+-rw-rw-r-- 1 pie pie 15 Mar 23 21:05 lll
+pie@ubuntu:/tmp$ chmod u+x lll
+pie@ubuntu:/tmp$ ls -l lll
+-rwxrw-r-- 1 pie pie 15 Mar 23 21:05 lll
+pie@ubuntu:/tmp$ ./lll
+12-file_type
+lll
+pie@ubuntu:/tmp$ 
+```
+<br /><br />
 
 
 # Tasks
