@@ -13,8 +13,7 @@
 [LTS](https://wiki.ubuntu.com/LTS) <br />
 [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29) <br />
 
-man or help:
-
+## man or help:
 cd
 ls
 pwd
