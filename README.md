@@ -20,3 +20,12 @@ The following projects cover an overview of the foundational skills needed to su
 | [0x01-shell_permissions](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x01-shell_permissions) | How to handle permissions for users, groups, and others |
 | [0x02-shell_redirections](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x02-shell_redirections) | Input and Output streams in Linux |
 | [0x03-shell_variables_expansions](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x03-shell_variables_expansions) | Use of aliases and environmental variables |
+
+
+### Author
+
+Imane J.
+
+Email me on [i.jalal@aui.ma](i.jalal@aui.ma)
+
+Follow me on [Linkedin](https://www.linkedin.com/in/imanejalal972/)
