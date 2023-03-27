@@ -1,5 +1,5 @@
-# RTFM
---------------------------------------------------------------------------
+# System engineering & DevOps - Bash
+# Shell Permissions
 
 
 # Resources
