@@ -166,8 +166,7 @@ Display the contents list of your current directory.
 Example:
 ```bash
 $ ./1-listit
-Applications    Documents   Dropbox Movies Pictures
-Desktop Downloads   Library Music Public
+0-current_working_directory  README.md
 $
 ```
 Repo:
@@ -184,10 +183,10 @@ Write a script that changes the working directory to the user’s home directory
 pie@ubuntu:/tmp$ pwd
 /tmp
 pie@ubuntu:/tmp$ echo $HOME
-/home/pie
+/root
 pie@ubuntu:/tmp$ source ./2-bring_me_home
 pie@ubuntu:~$ pwd
-/home/pie
+/root
 pie@ubuntu:~$ 
 ```
 Repo:
@@ -203,10 +202,10 @@ Example:
 ```bash
 $ ./3-listfiles
 total 32
--rwxr-xr-x@ 1 sylvain staff 18 Mar 23 00:19 0-current_working_directory
--rwxr-xr-x@ 1 sylvain staff 19 Mar 23 00:23 1-listit
--rwxr-xr-x@ 1 sylvain staff 18 Mar 23 00:29 2-bring_me_home
--rwxr-xr-x@ 1 sylvain staff 18 Mar 23 00:39 3-listfiles
+-rwxr-xr-x 1 root root    16 Mar 13 09:12 0-current_working_directory
+-rwxr-xr-x 1 root root    15 Mar 14 02:52 1-listit
+-rwxr-xr-x 1 root root    17 Mar 14 02:52 2-bring_me_home
+-rwxr-xr-x 1 root root    18 Mar 14 03:32 3-listfiles
 $
 ```
 Repo:
@@ -222,13 +221,13 @@ Example:
 ```bash
 $ ./4-listmorefiles
 total 32
-drwxr-xr-x@ 6 sylvain staff 204 Mar 23 00:29 .
-drwxr-xr-x@ 43 sylvain staff 1462 Mar 23 00:19 ..
--rwxr-xr-x@ 1 sylvain staff 18 Mar 23 00:19 0-current_working_directory
--rwxr-xr-x@ 1 sylvain staff 19 Mar 23 00:23 1-listit
--rwxr-xr-x@ 1 sylvain staff 18 Mar 23 00:29 2-bring_me_home
--rwxr-xr-x@ 1 sylvain staff 18 Mar 23 00:39 3-listfiles
--rwxr-xr-x@ 1 sylvain staff 18 Mar 23 00:41 4-listmorefiles
+drwxr-xr-x 2 root root  4096 Mar 21 11:41 .
+drwxr-xr-x 7 root root   178 Mar 26 10:04 ..
+-rwxr-xr-x 1 root root    16 Mar 13 09:12 0-current_working_directory
+-rwxr-xr-x 1 root root    15 Mar 14 02:52 1-listit
+-rwxr-xr-x 1 root root    17 Mar 14 02:52 2-bring_me_home
+-rwxr-xr-x 1 root root    18 Mar 14 03:32 3-listfiles
+-rwxr-xr-x 1 root root    19 Mar 14 03:32 4-listmorefiles
 $
 ```
 Repo:
@@ -247,14 +246,14 @@ Example:
 ```bash
 $ ./5-listfilesdigitonly
 total 32
-drwxr-xr-x@ 6 501 20 204 Mar 23 00:29 .
-drwxr-xr-x@ 43 501 20 1462 Mar 23 00:19 ..
--rwxr-xr-x@ 1 501 20 18 Mar 23 00:19 0-current_working_directory
--rwxr-xr-x@ 1 501 20 18 Mar 23 00:23 1-listfiles
--rwxr-xr-x@ 1 501 20 19 Mar 23 00:29 2-bring_me_home
--rwxr-xr-x@ 1 501 20 20 Mar 23 00:39 3-listfiles
--rwxr-xr-x@ 1 501 20 18 Mar 23 00:41 4-listmorefiles
--rwxr-xr-x@ 1 501 20 18 Mar 23 00:43 5-listfilesdigitonly
+drwxr-xr-x 2 0 0  4096 Mar 21 11:41 .
+drwxr-xr-x 7 0 0   178 Mar 26 10:04 ..
+-rwxr-xr-x 1 0 0    16 Mar 13 09:12 0-current_working_directory
+-rwxr-xr-x 1 0 0    15 Mar 14 02:52 1-listit
+-rwxr-xr-x 1 0 0    17 Mar 14 02:52 2-bring_me_home
+-rwxr-xr-x 1 0 0    18 Mar 14 03:32 3-listfiles
+-rwxr-xr-x 1 0 0    19 Mar 14 03:32 4-listmorefiles
+-rwxr-xr-x 1 0 0    20 Mar 14 03:33 5-listfilesdigitonly
 $
 ```
 Repo:
@@ -377,14 +376,14 @@ Create a symbolic link to /bin/ls, named __ls__. The symbolic link should be cre
 ```bash
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
 total 144
-drwxrwxr-x  2 ubuntu ubuntu   4096 Mar 23 03:24 .
-drwxrwxrwt 12 root   root   139264 Mar 23 03:24 ..
+drwxr-xr-x 2 root root  4096 Mar 21 11:41 .
+drwxr-xr-x 7 root root   178 Mar 26 10:04 ..
 ubuntu@ip-172-31-63-244:/tmp/sym$./13-symbolic_link
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
 total 144
-drwxrwxr-x  2 ubuntu ubuntu   4096 Mar 23 03:24 .
-drwxrwxrwt 12 root   root   139264 Mar 23 03:24 ..
-lrwxrwxrwx  1 ubuntu ubuntu      7 Mar 23 03:24 __ls__ -> /bin/ls
+drwxr-xr-x 2 root root  4096 Mar 26 21:05 .
+drwxr-xr-x 7 root root   178 Mar 26 10:04 ..
+lrwxrwxrwx 1 root root     7 Mar 26 21:05 __ls__ -> /bin/ls
 ```
 Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
@@ -409,29 +408,29 @@ You can assume that the directory /tmp/u will exist when we will run your script
 ```bash
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
 total 148
-drwxrwxr-x  3 ubuntu ubuntu   4096 Mar 23 03:33 .
-drwxrwxrwt 12 root   root   139264 Mar 23 03:26 ..
--rw-rw-r--  1 ubuntu ubuntu      0 Mar 23 03:32 My_file
-lrwxrwxrwx  1 ubuntu ubuntu      7 Mar 23 03:24 __ls__ -> /bin/ls
--rw-rw-r--  1 ubuntu ubuntu      0 Mar 23 03:32 Elif_ym
--rw-rw-r--  1 ubuntu ubuntu      0 Mar 23 03:32 random_file
+drwxr-xr-x 2 root root  4096 Mar 26 21:05 .
+drwxr-xr-x 7 root root   178 Mar 26 10:04 ..
+-rw-rw-r--  1 root root      0 Mar 26 21:05 My_file
+lrwxrwxrwx 1 root root     7 Mar 26 21:05 __ls__ -> /bin/ls
+-rw-rw-r--  1 root root      0 Mar 26 21:06 Elif_ym
+-rw-rw-r--  1 root root      0 Mar 26 21:06 random_file
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la /tmp/u
 total 8
-drwxrwxr-x 2 ubuntu ubuntu 4096 Mar 23 03:33 .
-drwxrwxr-x 3 ubuntu ubuntu 4096 Mar 23 03:33 ..
+drwxrwxr-x 2 ubuntu ubuntu 4096 Mar 26 03:33 .
+drwxrwxr-x 3 ubuntu ubuntu 4096 Mar 26 03:33 ..
 ubuntu@ip-172-31-63-244:/tmp/sym$ ./100-lets_move
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
 total 148
-drwxrwxr-x  3 ubuntu ubuntu   4096 Mar 23 03:33 .
-drwxrwxrwt 12 root   root   139264 Mar 23 03:26 ..
-lrwxrwxrwx  1 ubuntu ubuntu      7 Mar 23 03:24 __ls__ -> /bin/ls
--rw-rw-r--  1 ubuntu ubuntu      0 Mar 23 03:32 random_file
+drwxrwxr-x  3 ubuntu ubuntu   4096 Mar 26 03:33 .
+drwxrwxrwt 12 root   root   139264 Mar 26 03:26 ..
+lrwxrwxrwx  1 ubuntu ubuntu      7 Mar 26 03:24 __ls__ -> /bin/ls
+-rw-rw-r--  1 ubuntu ubuntu      0 Mar 26 03:32 random_file
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la /tmp/u
 total 8
-drwxrwxr-x 2 ubuntu ubuntu 4096 Mar 23 03:33 .
-drwxrwxr-x 3 ubuntu ubuntu 4096 Mar 23 03:33 ..
--rw-rw-r-- 1 ubuntu ubuntu    0 Mar 23 03:32 My_file
--rw-rw-r-- 1 ubuntu ubuntu    0 Mar 23 03:32 Elif_ym
+drwxrwxr-x 2 ubuntu ubuntu 4096 Mar 26 03:33 .
+drwxrwxr-x 3 ubuntu ubuntu 4096 Mar 26 03:33 ..
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 26 03:32 My_file
+-rw-rw-r-- 1 ubuntu ubuntu    0 Mar 26 03:32 Elif_ym
 ```
 Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
@@ -463,7 +462,7 @@ You are only allowed to use two spaces (and lines) in your script, not more.
 ```bash
 pie@ubuntu:/tmp/h$ ls -l
 total 4
--rwxrw-r-- 1 pie pie 44 Mar 23 12:09 102-tree
+-rwxrw-r-- 1 root root 44 Mar 26 12:09 102-tree
 pie@ubuntu:/tmp/h$ wc -l 102-tree 
 2 102-tree
 pie@ubuntu:/tmp/h$ head -1 102-tree 
@@ -477,7 +476,7 @@ pie@ubuntu:/tmp/h$ ls welcome/
 to
 pie@ubuntu:/tmp/h$ ls -l welcome/to
 total 4
-drwxrwxr-x 2 julien julien 4096 Mar 23 12:11 school
+drwxrwxr-x 2 julien julien 4096 Mar 26 12:11 school
 pie@ubuntu:/tmp/h$ 
 ```
 Repo:
@@ -519,12 +518,12 @@ Create a magic file school.mgc that can be used with the command file to detect 
 ubuntu@ip-172-31-63-244:/tmp/magic$ cp /bin/ls .
 ubuntu@ip-172-31-63-244:/tmp/magic$ ls -la
 total 268
-drwxrwxr-x  2 ubuntu ubuntu   4096 Mar 23 02:44 .
-drwxrwxrwt 11 root   root   139264 Mar 23 02:44 ..
--rw-r--r--  1 ubuntu ubuntu    496 Mar 23 02:42 school.mgc
--rwxr-xr-x  1 ubuntu ubuntu 110080 Mar 23 02:43 ls
--rw-rw-r--  1 ubuntu ubuntu     50 Mar 23 02:06 thisisaschoolfile
--rw-rw-r--  1 ubuntu ubuntu     30 Mar 23 02:16 thisisatextfile
+drwxrwxr-x  2 ubuntu ubuntu   4096 Mar 26 02:44 .
+drwxrwxrwt 11 root   root   139264 Mar 26 02:44 ..
+-rw-r--r--  1 ubuntu ubuntu    496 Mar 26 02:42 school.mgc
+-rwxr-xr-x  1 ubuntu ubuntu 110080 Mar 26 02:43 ls
+-rw-rw-r--  1 ubuntu ubuntu     50 Mar 26 02:06 thisisaschoolfile
+-rw-rw-r--  1 ubuntu ubuntu     30 Mar 26 02:16 thisisatextfile
 ubuntu@ip-172-31-63-244:/tmp/magic$ file --mime-type -m school.mgc *
 school.mgc:         application/octet-stream
 ls:                    application/octet-stream
