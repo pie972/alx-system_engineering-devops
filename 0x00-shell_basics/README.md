@@ -1,5 +1,5 @@
-# RTFM
---------------------------------------------------------------------------
+# System engineering & DevOps - Bash
+# Shell Basics
 
 
 # Resources
@@ -49,7 +49,7 @@
 <br />
 
 ## Navigation
-* What do the commands or built-ins 'cd', 'pwd', 'ls' do 
+* What do the commands or built-ins ***cd***, ***pwd***, ***ls*** do 
 * How to navigate the filesystem
 * What are the . and .. directories
 * What is the working directory, how to print it and how to change it
@@ -57,15 +57,15 @@
 * What is the home directory, and how to go there
 * What is the difference between the root directory and the home directory of the user root
 * What are the characteristics of hidden files and how to list them
-* What does the command 'cd' - do
+* What does the command ***cd*** - do
 <br />
 
 ## Looking Around
-* What do the commands 'ls', 'less', 'file' do
+* What do the commands ***ls***, ***less***, ***file*** do
 * How do you use options and arguments with commands
 * Understand the ls long format and how to display it
 * [A Guided Tour](http://linuxcommand.org/lc3_lts0040.php)
-* What does the 'ln' command do
+* What does the ***ln*** command do
 * What do you find in the most common/important directories
 * What is a symbolic link
 * What is a hard link
@@ -73,13 +73,13 @@
 <br />
 
 ## Manipulating Files
-* What do the commands 'cp', 'mv', 'rm', 'mkdir' do
+* What do the commands ***cp***, ***mv***, ***rm***, ***mkdir*** do
 * What are wildcards and how do they work
 * How to use wildcards
 <br />
 
 ## Working with Commands
-* What do 'type', 'which', 'help', 'man' commands do
+* What do ***type***, ***which***, ***help***, ***man*** commands do
 * What are the different kinds of commands
 * What is an alias
 * When do you use the command help instead of man
@@ -96,7 +96,7 @@
 <br />
 
 ## LTS
-* What does 'LTS' mean?
+* What does ***LTS*** mean?
 <br />
 
 # Requirements
@@ -160,6 +160,7 @@ Repo:
 - File: [0-current_working_directory](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/0-current_working_directory)
 
 
+
 ## 1. What’s in there?
 Display the contents list of your current directory.
 Example:
@@ -173,6 +174,7 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [1-listit](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/1-listit)
+
 
 
 ## 2. There is no place like home
@@ -194,6 +196,7 @@ Repo:
 - File: [2-bring_me_home](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/2-bring_me_home)
 
 
+
 ## 3. The long format
 Display current directory contents in a long format
 Example:
@@ -210,6 +213,7 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [3-listfiles](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/3-listfiles)
+
 
 
 ## 4. Hidden files
@@ -231,6 +235,7 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [4-listmorefiles](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/4-listmorefiles)
+
 
 
 ## 5. I love numbers
@@ -258,6 +263,7 @@ Repo:
 - File: [5-listfilesdigitonly](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/5-listfilesdigitonly)
 
 
+
 ## 6. Welcome
 Create a script that creates a directory named 'my_first_directory' in the /tmp/ directory.
 Example:
@@ -273,8 +279,9 @@ Repo:
 - File: [6-firstdirectory](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/6-firstdirectory)
 
 
+
 ## 7. Betty in my first directory
-Move the file 'betty' from /tmp/ to /tmp/my_first_directory.
+Move the file ***betty*** from /tmp/ to /tmp/my_first_directory.
 Example:
 ```bash
 $ ./7-movethatfile
@@ -288,8 +295,9 @@ Repo:
 - File: [7-movethatfile](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/7-movethatfile)
 
 
+
 ## 8. Bye bye Betty
-Delete the file 'betty'.
+Delete the file ***betty***.
 * The file betty is in /tmp/my_first_directory
 Example:
 ```bash
@@ -301,6 +309,7 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [8-firstdelete](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/8-firstdelete)
+
 
 
 ## 9. Bye bye My first directory
@@ -316,6 +325,7 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [9-firstdirdeletion](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/9-firstdirdeletion)
+
 
 
 ## 10. Back to the future
@@ -337,6 +347,7 @@ Repo:
 - File: [10-back](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/10-back)
 
 
+
 ## 11. Lists
 Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
 Repo:
@@ -345,8 +356,9 @@ Repo:
 - File: [11-lists](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/11-lists)
 
 
+
 ## 12. File type
-Write a script that prints the type of the file named 'iamafile'. The file 'iamafile' will be in the /tmp directory when we will run your script.
+Write a script that prints the type of the file named ***iamafile***. The file ***iamafile*** will be in the /tmp directory when we will run your script.
 Example
 ```bash
 ubuntu@ip-172-31-63-244:~$ ./12-file_type
@@ -357,6 +369,7 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [12-file_type](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/12-file_type)
+
 
 
 ## 13. We are symbols, and inhabit symbols
@@ -379,6 +392,7 @@ Repo:
 - File: [13-symbolic_link](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/13-symbolic_link)
 
 
+
 ## 14. Copy HTML files
 Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
 You can consider that all HTML files have the extension .html
@@ -386,6 +400,7 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [14-copy_html](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/14-copy_html)
+
 
 
 ## 15. Let’s move
@@ -424,6 +439,7 @@ Repo:
 - File: [100-lets_move](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/100-lets_move)
 
 
+
 ## 16. Clean Emacs
 Create a script that deletes all files in the current working directory that end with the character ~.
 ```bash
@@ -438,6 +454,7 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [101-clean_emacs](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/101-clean_emacs)
+
 
 
 ## 17. Tree
@@ -469,6 +486,7 @@ Repo:
 - File: [102-tree](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/102-tree)
 
 
+
 ## 18. Life is a series of commas, not periods
 Write a command that lists all the files and directories of the current directory, separated by commas (,).
 * Directory names should end with a slash (/)
@@ -492,6 +510,7 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [103-commas](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/103-commas)
+
 
 
 ## 19. File type: School
@@ -522,4 +541,21 @@ Repo:
 - GitHub repository: [alx-system_engineering-devops](https://github.com/pie972/alx-system_engineering-devops)
 - Directory: [0x00-shell_basics](https://github.com/pie972/alx-system_engineering-devops/tree/master/0x00-shell_basics)
 - File: [school.mgc](https://github.com/pie972/alx-system_engineering-devops/blob/master/0x00-shell_basics/school.mgc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
